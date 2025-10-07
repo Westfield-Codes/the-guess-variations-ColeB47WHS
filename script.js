@@ -1,25 +1,53 @@
-function newGame (){
+/* Guess Game Program by [your name here]
+ * Adds the ability to play again. 
+ */
+
+/* newGame is an outer loop giving the user an option 
+ * to play again, using a boolean variable called again.
+ */
+
+// define function newGame
+function newGame(){
+  // create a Boolean variable for again, set to true
 let again = true;
-let games = 0;
+  // loop as long as again is true 
 while (again == true) {
- games++;
- if (games > 1) {
-    again = prompt("Play Again")
- }
- guessGame()
-   }
-  }
+    // run the guessGame function 
+  guessGame();
+    // ask to play again with again set to a confirm
+
+    // close the loop
+}
+  // thank the player for playing
+
+  // close the function
+}
+
   
-function guessGame(){
- let answer=Math.floor(Math.random()*100)+1;
-alert(answer)
-let guess = 0;
-while (guess != answer && guess != "q") {
-guess = prompt("guess a number 1-100");
-if (guess == "q") alert("Quitter!")
-else if (guess == answer) alert ("Correct!")
-else if (guess > answer) alert("Too High!")
-else if (guess < answer) alert("Too Low!")
-else alert ("bad input!")
-}
-}
+// create a function called guessGame 
+
+  // create guess and set equal to 0 
+
+  // create tries and set equal to 0 
+
+  // create variable answer and generate a random integer 1-100
+
+  // display the integer for testing purposes only
+
+  // loop while guess is not equal to answer
+
+    // set guess equal to asking user to "Guess a number, 1-100"
+
+    // add one to tries
+
+    // if guess equals answer display "Correct in [tries] tries!" 
+
+    // or if guess is greater than answer display "Too high!" 
+
+    // or if guess is less than answer display "Too low!" 
+
+    // if it's none of those, say "Bad Input!"
+
+    // end the loop
+
+  // end the function
